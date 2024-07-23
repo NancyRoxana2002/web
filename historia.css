@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ajusta la altura como prefieras */
+  height: 100vh; /* Ajusta la altura como prefieras */
+}
+
+.card {
+  width: 200px; /* Ancho del contenedor de la tarjeta */
+  height: 100px; /* Alto del contenedor de la tarjeta */
+  perspective: 100px; /* Perspectiva para el efecto 3D */
+}
+
+.front, .back {
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  backface-visibility: hidden; /* Oculta la parte trasera de la tarjeta */
+  transition: transform 0.6s;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(300deg);/*nicialmente girada 180 grados para estar oculta */
+  background-color: ; /* Color de fondo opcional para la parte trasera */
+  display: none; /* Inicialmente oculta */
+  padding: 20px;
+}
+
+.card:hover .front {
+  transform: rotateY(-180deg); /* Gira la parte delantera cuando se pasa el mouse */
+}
+
+.card:hover .back {
+  display: block; /* Muestra el texto cuando se pasa el mouse */
+  transform: rotateY(0deg); /* Gira la parte trasera para que sea visible */
+}

@@ -1,0 +1,27 @@
+
+body{
+    background-color: aquamarine;
+}
+
+.valor{
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: coral;
+}
+
+.comun{
+    margin-right: 200px;
+    margin-left: 200px;
+    background-color: antiquewhite;
+}
+
+.bachi{
+     margin-right: 150px;
+    margin-left: 150px;
+    background-color: antiquewhite;
+}
+}   
+.UNO{
+    background-color: gray;
+    border-radius: 100px;
+}
